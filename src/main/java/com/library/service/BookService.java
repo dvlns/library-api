@@ -21,7 +21,7 @@ public class BookService {
                 .orElseThrow(() -> new RuntimeException("Book not found with id " + id));
     }
 
-    public Book createBook(Book book) {
+    public Book create(Book book) {
         return bookRepository.save(book);
     }
 
